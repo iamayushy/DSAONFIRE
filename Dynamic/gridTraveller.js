@@ -8,4 +8,4 @@ function gridTraveller(m, n, memo = {}){
     return memo[key]
 }   
 
-console.log(gridTraveller(18, 18));
+console.log(gridTraveller(6, 5));
