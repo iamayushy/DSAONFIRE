@@ -13,7 +13,8 @@ def generate(open, close, ans, op):
         op2 = op
         op2 += ')'
         generate(open, close - 1, ans, op2)
-ans = []
+an = []
 x = int(input())
-generate(x, x, ans, "")
-print(ans)
+generate(x, x, an, "")
+print(an)
+
