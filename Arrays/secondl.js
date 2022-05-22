@@ -15,10 +15,10 @@ for(let i = 0; i < arr.length; i++){
     }
 }
 
-console.log(max1, max2)
+console.log("First and Second Larget",max1, max2)
 // for second smallest in the array
-max1 = 9999
-max2 = 9999
+max1 = Number.MAX_SAFE_INTEGER
+max2 = Number.MAX_SAFE_INTEGER
 for(let i = 0; i < arr.length; i++){
     if(max1 > arr[i]){
         max2 = max1
@@ -30,4 +30,4 @@ for(let i = 0; i < arr.length; i++){
         }
     }
 }
-console.log("Smallest", max1, max2)
+console.log("First And Second Smallest Element", max1, max2)
