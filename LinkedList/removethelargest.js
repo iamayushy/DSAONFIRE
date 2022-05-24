@@ -33,7 +33,6 @@ var removeMaximum = function (head) {
     }
     curr = head
     while(curr !== null && ans !== 1){
-        prev = curr
         curr = curr.next
         ans--
     }
