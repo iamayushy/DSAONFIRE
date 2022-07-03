@@ -8,7 +8,7 @@ const threeSum = (nums) => {
 
     for(let i = 0; i < nums.length; i++){
 
-        if(i === 0 || i > 0 && nums[i] !== nums[i - 1]){
+        if(i === 0 || i > 0 && nums[i] !== nums[i - 1]){ // to eleminate the duplicate characters
         let lo = i + 1
         let hi = nums.length - 1
         let sum = 0 - nums[i]
@@ -19,8 +19,8 @@ const threeSum = (nums) => {
             if(check === sum){
                 ans.push([nums[i], nums[lo], nums[hi]])
 
-                while(lo < hi && nums[lo] === nums[lo+1]) lo++
-                while(lo < hi && nums[hi] === nums[hi - 1]) hi--
+                while(lo < hi && nums[lo] === nums[lo+1]) lo++ // to eleminate the duplicate characters
+                while(lo < hi && nums[hi] === nums[hi - 1]) hi-- // to eleminate the duplicate characters
 
                 lo++
                 hi--
