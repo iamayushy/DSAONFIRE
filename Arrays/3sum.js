@@ -1,5 +1,6 @@
 // 3 sum => return the all the unique pairs whose some is 3
-// 1.Sort the array first 2.
+// 1.Sort the array first 2. Make a constant and move check b + c = a // if true store it in the an array
+// TC = 0(n2) -> 0(n) => for auxiallary space
 
 const threeSum = (nums) => {
     nums = nums.sort((a, b) => a - b)
