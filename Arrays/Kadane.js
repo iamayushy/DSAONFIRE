@@ -1,14 +1,12 @@
 // Maximum Subarray Sum in an Array
-
-function kadane(arr){
-    let curr = 0;
-    let max = 0;
-    for(let i = 0; i < arr.length; i++){
-        curr += arr[i];
-        max = Math.max(curr, max)
-        if(curr < 0){
-            curr = 0;
-        }
+// kadane algorithm
+function kadane(nums){
+    let sum = 0;
+    let max = -9999
+    for(num of nums){
+        sum += num
+        max = Math.max(sum, max)
+        if(sum < 0) sum = 0
     }
     return max
     
