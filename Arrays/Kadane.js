@@ -11,5 +11,5 @@ function kadane(nums){
     return max
     
 }
-const arr = [-2,1,-3,4,-1,2,1,-5,4]
+const arr = [-2,1,-3,4,-1,2,1,-5,3, 4,5 ,6 7, 8,-19293, 12345, 11345, -111]
 console.log(kadane(arr));
