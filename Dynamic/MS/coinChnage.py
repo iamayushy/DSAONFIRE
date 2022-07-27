@@ -1,4 +1,4 @@
-#follows the same approach for of subset and the unbounded knapsack
+#follows the same approach for of subset and the unbounded knapsack [try to store the values]
 def change(arr, s, n, m = {}):
     key = n, s
     if key in m:
